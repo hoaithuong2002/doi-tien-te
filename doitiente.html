@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    td {
+        width: 150px;
+        text-align: center;
+    }
+</style>
 <body>
 <table>
-
-    <input type ="text" id="amount"/>
-        from:
-        <select name="" id="from">
-        <option value="23000">VND</option>
-        <option value="1">USD</option>
-        <option value="0.8">ER</option>
-        </select>
-        to:
-        <select name="" id="to">
+    <tr>
+        <th>Amount</th>
+        <th> From Currency</th>
+        <th> To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="amount"/></td>
+        <td><select name="" id="from">
             <option value="23000">VND</option>
             <option value="1">USD</option>
             <option value="0.8">ER</option>
+            <option value="9000">LAOS</option>
+            <option value="105">YEN</option>
+        </select></td>
+        <td><select name="" id="to">
+            <option value="23000">VND</option>
+            <option value="1">USD</option>
+            <option value="0.8">ER</option>
+            <option value="9000">LAOS</option>
+            <option value="105">YEN</option>
         </select>
-        <button onclick="changeMoney()">tinh</button>
-        <p id="result"></p>
+        </td>
+        <td>
+            <button onclick="changeMoney()">Convert</button>
 
-
+        </td>
+    </tr>
 </table>
+<p id="result"></p>
+
 <script src="tiente.js"></script>
 </body>
 </html>
